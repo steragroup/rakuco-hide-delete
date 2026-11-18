@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ラクコ 利用者削除ボタン非表示",
+  "version": "1.0.0",
+  "description": "ラクコの利用者一覧にある「削除する」を非表示にし、押せないようにします。",
+  "content_scripts": [
+    {
+      "matches": ["https://coala-prod-member.web.app/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
